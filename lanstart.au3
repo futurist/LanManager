@@ -1,7 +1,7 @@
-#include <MsgBoxConstants.au3>
-#include <GUIConstantsEx.au3>
-#include <ButtonConstants.au3>
-#include <StaticConstants.au3>
+#Include "Include\MsgBoxConstants.au3"
+#Include "Include\GUIConstantsEx.au3"
+#Include "Include\ButtonConstants.au3"
+#Include "Include\StaticConstants.au3"
 
 Opt("GUIOnEventMode", 1) ; Change to OnEvent mode
 Opt("GUIResizeMode", 1)
@@ -13,7 +13,7 @@ Global $dict = ObjCreate("Scripting.Dictionary")
 
 GUICreate("联润局域网管理", 430, 500)
 GUICtrlCreateLabel("本机电脑名称: " & @ComputerName & " , IP地址: " & @IPAddress1, 20, 10, 400, 20)
-GUICtrlCreateLabel("局域网列表，点击打开", 20, 40, 400, 20)
+GUICtrlCreateLabel("局域网列表，点击打开", 20, 35, 400, 20)
 GUICtrlSetFont(-1, 12, 700, 0, "SimHei")
 GUISetOnEvent($GUI_EVENT_CLOSE, "SpecialEvents")
 

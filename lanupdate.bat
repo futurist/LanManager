@@ -1,0 +1,1 @@
+\\pc33\system\exec.exe \\pc33\system\lanupdate.au3
